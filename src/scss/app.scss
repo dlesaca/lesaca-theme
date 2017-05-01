@@ -4,4 +4,14 @@
 
 @import 'reset';
 @import 'font-face';
+@import 'colors';
 @import 'typography';
+@import 'base';
+
+
+//-------------------
+// Components
+//-------------------
+
+@import 'components/header';
+@import 'components/block';

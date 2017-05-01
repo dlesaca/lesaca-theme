@@ -1,4 +1,5 @@
-.DS_store
+.DS_Store
+>>>>>>> 189dea6d43e3250573e483cf1094bd2335882cad
 node_modules
 public
 data/ghost-dev.db

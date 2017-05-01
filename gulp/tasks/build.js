@@ -12,7 +12,7 @@ gulp.task('build', (callback) => {
     'ghost:start',
     () => {
       gulp.watch('./src/**/*.hbs', ['handlebars', 'ghost:restart', 'browser-sync:reload']);
-      gulp.watch('./src/sass/**/*.scss', ['sass', 'browser-sync:reload']);
+      gulp.watch('./src/scss/**/*.scss', ['sass:css', 'browser-sync:reload']);
       gulp.watch('./src/js/**/*.js', ['js', 'browser-sync:reload']);
       return callback;
     }

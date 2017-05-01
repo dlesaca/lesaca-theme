@@ -16,5 +16,5 @@ gulp.task('sass:css', () => {                                                   
   }))
   .pipe(sass())
   .pipe(sourcemaps.write())                                                     //Write sourcemaps
-  .pipe(gulp.dest(config.paths.public + '/css'));
+  .pipe(gulp.dest(config.paths.assets + '/css'));
 });

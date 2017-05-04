@@ -1,20 +1,33 @@
-$color-site-plum: #2a0926;
-$color-site-plum-10: lighten($color-site-plum, 10%);
-$color-site-plum-20: lighten($color-site-plum, 20%);
+$color-site-plum-base: #2a0926;
+$color-site-plum-50: $color-site-plum-base;
+$color-site-plum-60: lighten($color-site-plum-base, 10%);
+$color-site-plum-70: lighten($color-site-plum-base, 20%);
 
-$color-site-navy: #010326;
-$color-site-navy-10: lighten($color-site-navy, 10%);
-$color-site-navy-20: lighten($color-site-navy, 20%);
+$color-site-navy-base: #010326;
+$color-site-navy-50: $color-site-navy-base;
+$color-site-navy-60: lighten($color-site-navy-base, 10%);
+$color-site-navy-70: lighten($color-site-navy-base, 20%);
 
-$color-site-blue: #012840;
-$color-site-blue-10: lighten($color-site-blue, 10%);
-$color-site-blue-20: lighten($color-site-blue, 20%);
+$color-site-blue-base: #012840;
+$color-site-blue-40: darken($color-site-blue-base, 10%);
+$color-site-blue-50: $color-site-blue-base;
+$color-site-blue-60: lighten($color-site-blue-base, 10%);
+$color-site-blue-70: lighten($color-site-blue-base, 20%);
 
-$color-site-pink: #f30b55;
-$color-site-pink-10: lighten($color-site-pink, 10%);
-$color-site-pink-20: lighten($color-site-pink, 20%);
+$color-site-pink-base: #f30b55;
+$color-site-pink-30: darken($color-site-pink-base, 20%);
+$color-site-pink-40: darken($color-site-pink-base, 10%);
+$color-site-pink-50: $color-site-pink-base;
+$color-site-pink-60: lighten($color-site-pink-base, 10%);
+$color-site-pink-70: lighten($color-site-pink-base, 20%);
 
-$color-site-gray: #54717f;
+$color-site-gray-base: #54717f;
+$color-site-gray-30: darken($color-site-gray-base, 20%);
+$color-site-gray-40: darken($color-site-gray-base, 10%);
+$color-site-gray-50: $color-site-gray-base;
+$color-site-gray-60: lighten($color-site-gray-base, 10%);
+$color-site-gray-70: lighten($color-site-gray-base, 20%);
+
 
 $color-site-white: #ffffff;
 $color-site-black: #000000;

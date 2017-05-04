@@ -1,0 +1,9 @@
+//Mixin to create CSS grid layouts
+
+@mixin grid($columns, $width, $gutter) {
+    @media (min-width: $bp-large) {
+    display: grid;
+    grid-template-columns: repeat($columns, $width);
+    grid-gap: $gutter;
+  }
+}

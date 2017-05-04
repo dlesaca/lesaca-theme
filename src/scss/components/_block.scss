@@ -1,3 +1,14 @@
 .site-block {
-  display: flex;
+  @extend %grid-960;
+  margin: 0 auto;
+  &__child {
+    width: 60em;
+    // background-color: $color-site-gray;
+    height: 60px;
+  }
+}
+
+.intro p {
+  @include font-size('51');
+  font-weight: 700;
 }

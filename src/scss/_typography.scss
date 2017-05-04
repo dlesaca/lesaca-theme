@@ -29,6 +29,10 @@ $perfect-fourth-typescale-map: (
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 
+@mixin majesti-banner {
+  font-family: "Majesti Banner", serif;
+}
+
 @mixin font-size($size) {
   @if map-has-key($perfect-fourth-typescale-map, $size) {
     font-size: map-get($perfect-fourth-typescale-map, $size);

@@ -1,0 +1,7 @@
+<nav class="site-navigation">
+  <ul class="site-navigation__list">
+  {{#foreach navigation}}
+  <li class="site-navigation__list__item" role="presentation"><a class="nav-link--hover {{#if current}} active{{/if}}" href="{{url absolute="false"}}">{{label}}</a></li>
+  {{/foreach}}
+  </ul>
+</nav>

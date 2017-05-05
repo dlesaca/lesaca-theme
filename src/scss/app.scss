@@ -3,15 +3,18 @@
 //-------------------
 
 @import 'reset';
-@import 'font-face';
 @import 'colors';
+@import 'font-face';
+@import 'vars';
+@import 'mixins';
 @import 'typography';
 @import 'base';
-
+@import 'layout';
 
 //-------------------
 // Components
 //-------------------
 
+@import 'components/navigation';
 @import 'components/header';
 @import 'components/block';

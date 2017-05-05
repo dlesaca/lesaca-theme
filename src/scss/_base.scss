@@ -1,16 +1,19 @@
 $site-padding: 1em;
 
 body {
-  background-color: $color-site-plum;
+  background-color: $color-site-plum-50;
   background-image: url('../images/face_bg.jpg');
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 85%;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 200;
-  color: $color-site-white;
+  // font-weight: 400;
+  color: $text-01;
   @include line-height('body');
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
+  @include butler;
   @include line-height('heading');
 }
 
@@ -23,12 +26,21 @@ h2 {
 }
 
 h3 {
-  @include font-size('51');
+  @include font-size('28');
 }
 
-
+h4 {
+  @include font-size('21');
+}
 
 a,
 a:active {
-  color: $color-site-pink;
+  text-decoration: none;
+  color: $link-01;
+}
+
+a:focus,
+a:hover {
+  transition: $transition--base;
+  color: $link-hover;
 }

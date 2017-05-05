@@ -1,3 +1,20 @@
 .site-block {
-  display: flex;
+  @extend %grid-960;
+  // grid-template-rows: 10em 10em 10em;
+  &--blog {
+    @extend %grid-gallery;
+    background-color: $color-site-black;
+  }
+}
+
+.site-block__child {
+  &--intro {
+    grid-column: 5 / span 7;
+    grid-row-start: 2;
+  }
+}
+
+.intro-text {
+  @include butler;
+  @include font-size('51');
 }

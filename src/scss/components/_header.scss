@@ -1,6 +1,8 @@
 .site-header {
+  @extend %grid-960;
+  grid-template-areas: ". . . . . . . . . . nav nav";
   padding: 3em;
   &__logo {
-    width: 20em;
+    width: 12em;
   }
 }

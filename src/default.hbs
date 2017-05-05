@@ -15,8 +15,19 @@
 
     {{!-- Stylesheet --}}
     <link rel="stylesheet" href="{{asset "css/app.css"}}">
+    {{ghost_head}}
   </head>
   <body>
-     {{{body}}}
+    <header class="site-header grid-half">
+      <div class="site-header__logo">
+        <a href="/">
+          <img src="assets/images/lesaca-logo.svg" alt="Lesaca Logo">
+        </a>
+      </div>
+      {{navigation}}
+    </header>
+    {{{body}}}
+
+    {{ghost_foot}}
   </body>
 </html>

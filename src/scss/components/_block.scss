@@ -1,6 +1,6 @@
 .site-block {
   @extend %grid-960;
-  grid-template-rows: 10em 10em 10em;
+  // grid-template-rows: 10em 10em 10em;
   &--blog {
     @extend %grid-gallery;
     background-color: $color-site-black;

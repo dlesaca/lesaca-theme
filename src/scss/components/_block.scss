@@ -1,14 +1,20 @@
 .site-block {
   @extend %grid-960;
-  margin: 0 auto;
-  &__child {
-    width: 60em;
-    // background-color: $color-site-gray;
-    height: 60px;
+  grid-template-rows: 10em 10em 10em;
+  &--blog {
+    @extend %grid-gallery;
+    background-color: $color-site-black;
   }
 }
 
-.intro p {
+.site-block__child {
+  &--intro {
+    grid-column: 5 / span 7;
+    grid-row-start: 2;
+  }
+}
+
+.intro-text {
+  @include butler;
   @include font-size('51');
-  font-weight: 700;
 }

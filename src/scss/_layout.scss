@@ -1,3 +1,7 @@
 %grid-960 {
   @include grid(12, 1fr, 1.25em);
 }
+
+%grid-gallery {
+  @include grid(3, 1fr, 0);
+}

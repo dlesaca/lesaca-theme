@@ -1,20 +1,75 @@
 .site-block {
   @extend %grid-960;
-  // grid-template-rows: 10em 10em 10em;
+  grid-template-rows: repeat(6, 6.25em);
   &--blog {
     @extend %grid-gallery;
+    grid-template-rows: repeat(2, 646px);
     background-color: $color-site-black;
+  }
+  &--project-banner {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &--showcase {
+    margin: 6em 0;
   }
 }
 
 .site-block__child {
   &--intro {
-    grid-column: 5 / span 7;
+    grid-column: 3 / span 8;
     grid-row-start: 2;
   }
 }
 
 .intro-text {
+  text-align: center;
   @include butler;
   @include font-size('51');
+}
+
+.post-content {
+  p {
+    @include font-size('21');
+    margin: 1em auto;
+    width: 40em;
+    letter-spacing: .02em;
+    line-height: 1.75em;
+    font-weight: 200;
+  }
+}
+
+.post-tags {
+  a {
+    color: $link-01;
+  }
+}
+
+.showcase {
+  // background-color: gray;
+  // padding: 0 2em;
+  img {
+    width: 100%;
+  }
+  &--layout-col2 {
+    @include grid(2, 1fr, 2em);
+  }
+  &--layout-col3 {
+    @include grid(3, 1fr, 2em);
+  }
+  &--layout-col4 {
+    @include grid(4, 1fr, 2em);
+  }
+  &--layout-col5 {
+    @include grid(5, 1fr, 2em);
+  }
+  &--layout-col6 {
+    @include grid(6, 1fr, 2em);
+  }
+  &__heading {
+    margin: 1em 0;
+    text-align: center;
+  }
 }

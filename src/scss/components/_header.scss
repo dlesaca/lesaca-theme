@@ -1,8 +1,13 @@
 .site-header {
   @extend %grid-960;
-  grid-template-areas: ". . . . . . . . . . nav nav";
+  grid-template-areas: ". . . . . . . . . nav nav nav";
   padding: 3em;
   &__logo {
-    width: 12em;
+    width: 20em;
   }
+}
+
+.post-header {
+  margin: 3em auto;
+  width: 53em;
 }

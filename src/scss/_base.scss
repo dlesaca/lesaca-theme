@@ -1,15 +1,13 @@
-$site-padding: 1em;
-
 body {
-  background-color: $color-site-plum-50;
-  background-image: url('../images/face_bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 85%;
+  background-color: $color-site-white;
+  background-size: 80%;
   font-family: 'Fira Sans', sans-serif;
-  // font-weight: 400;
-  color: $text-01;
+  color: $color-site-black;
   @include line-height('body');
+}
+
+p {
+  margin: 1em 0;
 }
 
 h1, h2, h3, h4 {
@@ -36,7 +34,7 @@ h4 {
 a,
 a:active {
   text-decoration: none;
-  color: $link-01;
+  color: $link-02;
 }
 
 a:focus,

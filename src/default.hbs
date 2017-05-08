@@ -26,7 +26,7 @@
     <header class="site-header grid-half">
       <div class="site-header__logo">
         <a href="/">
-          <img src="assets/images/lesaca-logo.svg" alt="Lesaca Logo">
+          <img src="{{@blog.logo}}" alt="{{@blog.title}}">
         </a>
       </div>
       {{navigation}}
@@ -34,5 +34,10 @@
     {{{body}}}
 
     {{ghost_foot}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="{{asset "js/main.js"}}">
+
+    </script>
   </body>
 </html>

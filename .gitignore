@@ -2,3 +2,4 @@
 node_modules
 public
 data/ghost-dev.db
+*.zip
